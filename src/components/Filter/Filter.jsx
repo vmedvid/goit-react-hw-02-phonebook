@@ -5,11 +5,7 @@ export const Filter = ({ onChangeFilter }) => {
   return (
     <Label htmlFor="search">
       Find contacts by name
-      <Input
-        type="text"
-        name="search"
-        onChange={onChangeFilter}
-      />
+      <Input type="text" name="search" onChange={onChangeFilter} />
     </Label>
   );
 };

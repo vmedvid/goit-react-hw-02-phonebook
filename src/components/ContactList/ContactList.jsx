@@ -3,10 +3,11 @@ import { List } from './ContactList.styled';
 import { ContactListItem } from './ContactListItem';
 
 export const ContactList = ({ contacts, filter, onDeleteContact }) => {
-
-    const newList = () => {
+  const newList = () => {
     const subString = filter.toLowerCase();
-    return contacts.filter(({ name }) => name.toLowerCase().includes(subString));
+    return contacts.filter(({ name }) =>
+      name.toLowerCase().includes(subString)
+    );
   };
 
   return (
